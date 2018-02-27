@@ -1,4 +1,5 @@
 const images = {
+  // dishes
   dish1: require('../static/images/dish/5.jpg'),
   dish2: require('../static/images/dish/7.jpg'),
   dish3: require('../static/images/dish/8.jpg'),
@@ -25,7 +26,29 @@ const images = {
   dish24: require('../static/images/dish/39.jpg'),
   dish25: require('../static/images/dish/40.jpg'),
   dish26: require('../static/images/dish/42.jpg'),
-  dish27: require('../static/images/dish/43.jpg')
+  dish27: require('../static/images/dish/43.jpg'),
+
+// Store1
+  green1: require('../static/images/green/1.jpg'),
+  green2: require('../static/images/green/3.jpg'),
+  green3: require('../static/images/green/4.jpg'),
+  green4: require('../static/images/green/6.jpg'),
+  green5: require('../static/images/green/10.jpg'),
+  green6: require('../static/images/green/19.jpg'),
+  green7: require('../static/images/green/34.jpg'),
+  green8: require('../static/images/green/35.jpg'),
+  green9: require('../static/images/green/36.jpg'),
+  green10: require('../static/images/green/37.jpg'),
+  green11: require('../static/images/green/38.jpg'),
+
+// Store2
+  wadsworth1: require('../static/images/wadsworth/90.jpg'),
+  wadsworth2: require('../static/images/wadsworth/91.jpg'),
+  wadsworth3: require('../static/images/wadsworth/92.jpg'),
+  wadsworth4: require('../static/images/wadsworth/93.jpg'),
+  wadsworth5: require('../static/images/wadsworth/94.jpg'),
+  wadsworth6: require('../static/images/wadsworth/95.jpg'),
+  wadsworth7: require('../static/images/wadsworth/96.jpg')
 }
 
 export default images;

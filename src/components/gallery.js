@@ -8,7 +8,7 @@ class Gallery extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: ''
+      selected: 'dish'
     };
     this.setGallery = this.setGallery.bind(this);
     this.renderGallery = this.renderGallery.bind(this);
@@ -22,6 +22,8 @@ class Gallery extends Component {
     switch(gallery){
       case 'dish':
         return <Dish />
+      case 'store':
+        return <Store />
       default:
         return null;
     }
@@ -31,7 +33,10 @@ class Gallery extends Component {
     return (
       <div className="gallery">
         <h1>Gallery</h1>
-        <button onClick={() => this.setGallery('dish')}>See Our Dishes</button>
+        <div className="gallery-buttons">
+          <button className="btn btn-secondary" onClick={() => this.setGallery('dish')}>See Our Dishes</button>
+          <button className="btn btn-secondary" onClick={() => this.setGallery('store')}>See Our Restaurant</button>
+        </div>
         <div>
           {this.renderGallery(this.state.selected)}
         </div>
