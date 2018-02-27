@@ -146,4 +146,11 @@ ul {
   h1 {
     text-align: center;
   }
+  .gallery-buttons {
+    display: flex;
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }

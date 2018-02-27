@@ -111,5 +111,10 @@ ul {
 
 .gallery h1 {
   text-align: center; }
+.gallery .gallery-buttons {
+  display: flex; }
+  .gallery .gallery-buttons button {
+    display: block;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=styles.css.map */
