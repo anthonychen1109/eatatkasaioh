@@ -109,12 +109,14 @@ ul {
 .modal-img {
   max-width: 300px; }
 
-.gallery h1 {
-  text-align: center; }
-.gallery .gallery-buttons {
-  display: flex; }
-  .gallery .gallery-buttons button {
-    display: block;
-    margin: 0 auto; }
+.gallery {
+  padding-top: 80px; }
+  .gallery h1 {
+    text-align: center; }
+  .gallery .gallery-buttons {
+    display: flex; }
+    .gallery .gallery-buttons button {
+      display: block;
+      margin: 0 auto; }
 
 /*# sourceMappingURL=styles.css.map */
