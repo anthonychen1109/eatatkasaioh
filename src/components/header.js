@@ -2,15 +2,13 @@ import React from 'react';
 
 // Components
 import Carousel from './carousel';
-import Select from './select';
 
-const App = () => {
+const Header = () => {
   return (
-    <div className="app">
+    <div className="header">
       <Carousel />
-      <Select />
     </div>
   )
 }
 
-export default App;
+export default Header;

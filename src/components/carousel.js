@@ -1,9 +1,9 @@
 import React from 'react';
 
 // Images
-import Img1 from '../static/images/dish/5.jpg';
-import Img2 from '../static/images/dish/7.jpg';
-import Img3 from '../static/images/dish/8.jpg';
+import Img1 from '../static/images/dish/30.jpg';
+import Img2 from '../static/images/dish/32.jpg';
+import Img3 from '../static/images/dish/33.jpg';
 
 const Carousel = () => {
   return (
