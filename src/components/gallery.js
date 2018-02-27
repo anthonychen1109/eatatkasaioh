@@ -23,7 +23,7 @@ class Gallery extends Component {
       case 'dish':
         return <Dish />
       case 'store':
-        return <Store />
+        return <Store galleryNumber={this.props.galleryNumber} />
       default:
         return null;
     }
@@ -31,7 +31,7 @@ class Gallery extends Component {
 
   render() {
     return (
-      <div className="gallery">
+      <div id="gallery" className="gallery">
         <h1>Gallery</h1>
         <div className="gallery-buttons">
           <button className="btn btn-secondary" onClick={() => this.setGallery('dish')}>See Our Dishes</button>

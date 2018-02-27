@@ -5,7 +5,7 @@ import Img from '../static/images/dish/20.jpg';
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="about-container container">
         <div className="about-text">
           <h1>About Us</h1>
