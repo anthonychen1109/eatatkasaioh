@@ -67,8 +67,8 @@ class Store extends Component {
           updateOnEachImageLoad={false}
         >
         {this.state.galleryNumber === '1' ?
-          <span>{masonry}</span> :
-          <span>{masonry2}</span>
+          <div>{masonry}</div> :
+          <div>{masonry2}</div>
         }
         </Masonry>
       </div>
