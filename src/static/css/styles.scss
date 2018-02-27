@@ -3,36 +3,66 @@
   padding: 0;
 }
 
-// ################## APP #####################
-.app {
+@mixin textheader {
+  color: white;
+  text-shadow: 0px 0px 3px black;
+}
+
+// ################## CAROUSEL #####################
+.carousel-item {
+  height: 70vh;
+  h1 {
+    @include textheader;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+}
+
+// ################## SELECT #####################
+.select {
+  margin-top: 40px;
   width: 100%;
   h1 {
-    padding: 40px 0;
     text-align: center;
   }
 }
 .select-location {
   display: flex;
+  justify-content: space-evenly;
+  padding: 40px 0;
   @media only screen and (max-width: 800px) {
     flex-direction: column;
   }
   .location {
-    height: 100vh;
-    width: 50%;
+    flex-grow: 1;
+    height: 50vh;
+    margin: 0 5px;
     @media only screen and (max-width: 800px) {
+      margin-bottom: 10px;
       width: 100%;
+    }
+    a {
+      text-decoration: none;
     }
     .overlay {
       background-color: rgba(0,0,0,0.5);
-      height: 100vh;
+      height: 50vh;
       transition: 0.2s;
       &:hover {
         background-color: rgba(0,0,0,0);
       }
       h1 {
-        color: white;
-        padding-top: 50%;
+        @include textheader;
+        bottom: 0;
+        margin: 0 auto;
+        position: relative;
         text-align: center;
+        top: 50%;
+        @media only screen and (max-width: 800px) {
+          font-size: 1.5em;
+        }
       }
     }
   }
