@@ -53,4 +53,29 @@
           .select-location .location .overlay h1 {
             font-size: 1.5em; } }
 
+.about-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px 0; }
+  .about-container h1 {
+    text-align: center; }
+  @media only screen and (max-width: 800px) {
+    .about-container {
+      flex-direction: column; } }
+  .about-container .about-text {
+    flex-grow: 1;
+    margin: 5px;
+    max-width: 50%; }
+    @media only screen and (max-width: 800px) {
+      .about-container .about-text {
+        max-width: 100%;
+        padding: 0 10px; }
+        .about-container .about-text h1 {
+          text-align: center; } }
+  .about-container .about-image {
+    flex-grow: 1;
+    margin: 5px;
+    padding-bottom: 300px;
+    width: 100%; }
+
 /*# sourceMappingURL=styles.css.map */
