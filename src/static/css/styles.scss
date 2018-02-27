@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 @mixin textheader {
   color: white;
   text-shadow: 0px 0px 3px black;
@@ -67,6 +71,28 @@
     }
   }
 }
+// ################## NAVBAR #####################
+.navbar {
+  height: 12vh;
+  .top-nav {
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      align-self: center;
+      color: black;
+      text-decoration: none;
+    }
+    li {
+      list-style: none;
+      h5 {
+        padding-top: 20px;
+      }
+      img {
+        max-height: 10vh;
+      }
+    }
+  }
+}
 
 // ################## ABOUT #####################
 .about-container {
@@ -96,5 +122,28 @@
     margin: 5px;
     padding-bottom: 300px;
     width: 100%;
+  }
+}
+
+// ################## DISH #####################
+.grid-item {
+  width:25.00%;
+  img {
+    padding: 3px;
+    max-width: 100%;
+    @media only screen and (max-width: 800px) {
+      padding: 1px;
+    }
+  }
+}
+
+.modal-img {
+  max-width: 300px;
+}
+
+// ################## GALLERY #####################
+.gallery {
+  h1 {
+    text-align: center;
   }
 }
