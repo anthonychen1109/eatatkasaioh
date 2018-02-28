@@ -37,7 +37,6 @@ class Store extends Component {
     };
   }
   render () {
-    console.log("store component", this.props.galleryNumber);
     var masonryOptions = {
       transitionDuration: 0
     };
@@ -67,8 +66,21 @@ class Store extends Component {
           updateOnEachImageLoad={false}
         >
         {this.state.galleryNumber === '1' ?
-          <div>{masonry}</div> :
-          <div>{masonry2}</div>
+          imagelist.map((item, index) => {
+            return (
+              <div key={item+index} className="grid-item">
+                <GalleryModal image={item}/>
+              </div>
+            )
+          })
+          :
+          imagelist2.map((item, index) => {
+            return (
+              <div key={item+index} className="grid-item">
+                <GalleryModal image={item}/>
+              </div>
+            )
+          })
         }
         </Masonry>
       </div>
