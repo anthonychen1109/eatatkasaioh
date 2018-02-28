@@ -7,30 +7,6 @@ import About from './about';
 import Gallery from './gallery';
 import Contact from './contact';
 
-const hours = [
-  {
-    day:	"Closed"
-  },
-  {
-    day: "11:00 am - 2:30 pm, 5:00 pm - 9:30pm"
-  },
-  {
-    day: "11:00 am - 2:30 pm, 5:00 pm - 9:30pm"
-  },
-  {
-    day: "11:00 am - 2:30 pm, 5:00 pm - 9:30pm"
-  },
-  {
-    day: "11:00 am - 2:30 pm, 5:00 pm - 9:30pm"
-  },
-  {
-    day: "11:00 am - 2:30 pm, 5:00 pm - 9:30pm"
-  },
-	{
-    day: "3:00 pm - 9:30 pm"
-  }
-]
-
 class ThreeEightSevenFive extends Component {
   constructor(props) {
     super(props);
