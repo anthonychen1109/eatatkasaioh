@@ -5,6 +5,15 @@
 ul {
   margin-bottom: 0; }
 
+.toTop {
+  border: 1px solid black;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 5%;
+  opacity: 0;
+  z-index: 99999; }
+
 .carousel-item {
   height: 70vh; }
   .carousel-item h1 {
@@ -71,6 +80,8 @@ ul.topnav {
       color: black;
       text-decoration: none;
       text-transform: uppercase; }
+    ul.topnav li .logo-red {
+      color: red; }
 
 ul.topnav li.dropdownIcon {
   display: none; }
@@ -161,6 +172,9 @@ ul.topnav li.dropdownIcon {
 .gallery {
   padding-top: 80px;
   padding-bottom: 40px; }
+  @media only screen and (max-width: 800px) {
+    .gallery {
+      padding-top: 0; } }
   .gallery h1 {
     padding-bottom: 20px;
     text-align: center; }
@@ -192,6 +206,9 @@ ul.topnav li.dropdownIcon {
 
 .contact-info {
   width: 100%; }
+  @media only screen and (max-width: 800px) {
+    .contact-info {
+      padding-top: 40px; } }
   .contact-info h1 {
     color: white;
     text-shadow: 0px 0px 3px black;
