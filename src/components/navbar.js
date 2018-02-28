@@ -8,24 +8,40 @@ class Navbar extends Component {
 
     };
     this.scrollTo = this.scrollTo.bind(this);
+    this.dropdownMenu = this.dropdownMenu.bind(this);
   }
 
   scrollTo(element) {
     $('html,body').animate({scrollTop: $(`#${element}`).offset().top}, 500);
   }
 
+  dropdownMenu() {
+    let x = document.getElementById('dropdownClick');
+    if (x.className === 'topnav') {
+      x.className = 'responsive animated slideInDown';
+    } else {
+      x.className = 'topnav';
+    }
+  }
+
   render() {
     return (
-      <div className="navbar">
-        <ul className="top-nav">
-          <a href="#about" onClick={() => this.scrollTo('about')}><li><h5>About</h5></li></a>
-          <a href="#"><li><h5>Online Order</h5></li></a>
-          <a href="/"><li className="logo"><h5 className="header-logo">Kasai Japanese Restaurant</h5></li></a>
-          <a href="#gallery" onClick={() => this.scrollTo('gallery')}><li><h5>Gallery</h5></li></a>
-          <a href="#contact" onClick={() => this.scrollTo('contact')}><li><h5>Contact</h5></li></a>
-          <a href="#" className="dropdown"><li><i className="fas fa-bars fa-2x"></i></li></a>
+      <nav>
+        <ul className="topnav" id="dropdownClick">
+          <li className="logo"><a href="/">Kasai Japanese Restaurant</a></li>
+          <li><a href="#about" onClick={() => this.scrollTo('about')}>About</a></li>
+          <li><a href="#">Order Online</a></li>
+          <li><a href="#gallery" onClick={() => this.scrollTo('gallery')}>Gallery</a></li>
+          <li><a href="#contact" onClick={() => this.scrollTo('contact')}>Contact</a></li>
+          <li id="test" className="dropdownIcon">
+            <a href="javascript:void(0);"
+              onClick={this.dropdownMenu}
+              >
+              &#9776;
+            </a>
+          </li>
         </ul>
-      </div>
+      </nav>
     )
   }
 }
