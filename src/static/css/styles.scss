@@ -72,53 +72,76 @@ ul {
   }
 }
 // ################## NAVBAR #####################
-.navbar {
+ul.topnav {
+  align-items: center;
+  display: flex;
   height: 12vh;
-  .dropdown {
-    display: none;
-  }
-  @media only screen and (max-width: 800px) {
-    background-color: white;
-    height: 80px;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    ul, a:not(:nth-child(3)) {
-      display: none;
-    }
-    .fa-bars {
-      color: black;
-    }
-    a.dropdown {
-      display: block;
-      padding-top: 10px;
-      position: relative;
-      right: 0;
-    }
-  }
-  .top-nav {
-    display: flex;
-    justify-content: space-evenly;
+  justify-content: space-around;
+  padding-left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9000;
+  li {
+    list-style: none;
     a {
-      align-self: center;
       color: black;
       text-decoration: none;
-    }
-    .logo {
-      color: red;
-    }
-    li {
-      list-style: none;
-      h5 {
-        padding-top: 20px;
-      }
-      img {
-        max-height: 10vh;
-      }
+      text-transform: uppercase;
     }
   }
 }
 
+ul.topnav {
+  li.dropdownIcon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  ul.topnav {
+     align-items: center;
+     li:not(:nth-child(1)) {
+       display: none;
+     }
+     li.logo {
+       margin: 0 auto;
+     }
+     li.dropdownIcon {
+       display: block;
+       padding-right: 10px;
+     }
+   }
+
+   ul.responsive {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     position: fixed;
+     width: 100%;
+     z-index: 9999;
+     li {
+        background-color: white;
+        display: inline;
+        list-style: none;
+        float: none;
+        padding: 5px 0;
+        z-index: 99999;
+        a {
+            color: black;
+            display: block;
+            padding-left: 10px;
+            text-decoration: none;
+          }
+      }
+   }
+
+   ul.responsive li.dropdownIcon {
+     padding-right: 10px;
+     position: absolute;
+     right: 0;
+     top: 0;
+   }
+}
 // ################## ABOUT #####################
 .about-container {
   display: flex;

@@ -56,42 +56,61 @@ ul {
           .select-location .location .overlay h1 {
             font-size: 1.5em; } }
 
-.navbar {
-  height: 12vh; }
-  .navbar .dropdown {
-    display: none; }
-  @media only screen and (max-width: 800px) {
-    .navbar {
-      background-color: white;
-      height: 80px;
-      position: fixed;
-      width: 100%;
-      z-index: 999; }
-      .navbar ul, .navbar a:not(:nth-child(3)) {
-        display: none; }
-      .navbar .fa-bars {
-        color: black; }
-      .navbar a.dropdown {
-        display: block;
-        padding-top: 10px;
-        position: relative;
-        right: 0; } }
-  .navbar .top-nav {
-    display: flex;
-    justify-content: space-evenly; }
-    .navbar .top-nav a {
-      align-self: center;
+ul.topnav {
+  align-items: center;
+  display: flex;
+  height: 12vh;
+  justify-content: space-around;
+  padding-left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9000; }
+  ul.topnav li {
+    list-style: none; }
+    ul.topnav li a {
       color: black;
-      text-decoration: none; }
-    .navbar .top-nav .logo {
-      color: red; }
-    .navbar .top-nav li {
-      list-style: none; }
-      .navbar .top-nav li h5 {
-        padding-top: 20px; }
-      .navbar .top-nav li img {
-        max-height: 10vh; }
+      text-decoration: none;
+      text-transform: uppercase; }
 
+ul.topnav li.dropdownIcon {
+  display: none; }
+
+@media only screen and (max-width: 800px) {
+  ul.topnav {
+    align-items: center; }
+    ul.topnav li:not(:nth-child(1)) {
+      display: none; }
+    ul.topnav li.logo {
+      margin: 0 auto; }
+    ul.topnav li.dropdownIcon {
+      display: block;
+      padding-right: 10px; }
+
+  ul.responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 9999; }
+    ul.responsive li {
+      background-color: white;
+      display: inline;
+      list-style: none;
+      float: none;
+      padding: 5px 0;
+      z-index: 99999; }
+      ul.responsive li a {
+        color: black;
+        display: block;
+        padding-left: 10px;
+        text-decoration: none; }
+
+  ul.responsive li.dropdownIcon {
+    padding-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 0; } }
 .about-container {
   display: flex;
   justify-content: space-evenly;
