@@ -65,6 +65,8 @@ ul {
       align-self: center;
       color: black;
       text-decoration: none; }
+    .navbar .top-nav .logo {
+      color: red; }
     .navbar .top-nav li {
       list-style: none; }
       .navbar .top-nav li h5 {
@@ -99,6 +101,9 @@ ul {
 
 .grid-item {
   width: 25.00%; }
+  @media only screen and (max-width: 800px) {
+    .grid-item {
+      width: 33.33%; } }
   .grid-item img {
     padding: 3px;
     max-width: 100%; }
@@ -107,7 +112,10 @@ ul {
         padding: 1px; } }
 
 .modal-img {
-  max-width: 300px; }
+  max-width: 600px; }
+  @media only screen and (max-width: 800px) {
+    .modal-img {
+      max-width: 300px; } }
 
 .gallery {
   padding-top: 80px; }
@@ -118,5 +126,40 @@ ul {
     .gallery .gallery-buttons button {
       display: block;
       margin: 0 auto; }
+
+.contact {
+  background-image: url("../images/dish/31.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 0 0; }
+  .contact h1 {
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    text-align: center; }
+
+.contact-container {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 40px; }
+  @media only screen and (max-width: 800px) {
+    .contact-container {
+      flex-direction: column; } }
+
+.contact-info {
+  width: 100%; }
+  .contact-info h1 {
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    text-align: center; }
+  .contact-info .hours {
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    padding-left: 20px;
+    padding-top: 40px;
+    text-align: center; }
+    @media only screen and (max-width: 800px) {
+      .contact-info .hours {
+        padding-left: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

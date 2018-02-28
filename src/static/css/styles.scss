@@ -82,6 +82,9 @@ ul {
       color: black;
       text-decoration: none;
     }
+    .logo {
+      color: red;
+    }
     li {
       list-style: none;
       h5 {
@@ -128,6 +131,9 @@ ul {
 // ################## DISH #####################
 .grid-item {
   width:25.00%;
+  @media only screen and (max-width: 800px) {
+    width: 33.33%;
+  }
   img {
     padding: 3px;
     max-width: 100%;
@@ -138,7 +144,10 @@ ul {
 }
 
 .modal-img {
-  max-width: 300px;
+  max-width: 600px;
+  @media only screen and (max-width: 800px) {
+    max-width: 300px;
+  }
 }
 
 // ################## GALLERY #####################
@@ -152,6 +161,43 @@ ul {
     button {
       display: block;
       margin: 0 auto;
+    }
+  }
+}
+
+// ################## CONTACT #####################
+.contact {
+  background-image: url("../images/dish/31.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 0 0;
+  h1 {
+    @include textheader;
+    text-align: center;
+  }
+}
+.contact-container {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+.contact-info {
+  width: 100%;
+  h1 {
+    @include textheader;
+    text-align: center;
+  }
+  .hours {
+    @include textheader;
+    padding-left: 20px;
+    padding-top: 40px;
+    text-align: center;
+    @media only screen and (max-width: 800px) {
+      padding-left: 0;
     }
   }
 }
