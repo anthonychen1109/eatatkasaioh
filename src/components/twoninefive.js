@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 // Components
 import Navbar from './navbar';
@@ -13,10 +14,23 @@ class TwoNineFive extends Component {
     this.state = {
 
     };
+    this.scrollTop = this.scrollTop.bind(this);
+  }
+
+  scrollTop() {
+    $('html, body').animate({
+        scrollTop: "0px"
+    }, 500);
   }
   render() {
     return (
       <div className="twoninefive">
+        <button
+          onClick={this.scrollTop}
+          className="btn btn-secondary toTop"
+          >
+          &#9650;
+        </button>
         <Navbar />
         <Header />
         <About />

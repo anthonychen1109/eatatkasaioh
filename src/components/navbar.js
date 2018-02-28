@@ -28,7 +28,7 @@ class Navbar extends Component {
     return (
       <nav>
         <ul className="topnav" id="dropdownClick">
-          <li className="logo"><a href="/">Kasai Japanese Restaurant</a></li>
+          <li className="logo"><a className="logo-red" href="/">Kasai Japanese Restaurant</a></li>
           <li><a href="#about" onClick={() => this.scrollTo('about')}>About</a></li>
           <li><a href="#">Order Online</a></li>
           <li><a href="#gallery" onClick={() => this.scrollTo('gallery')}>Gallery</a></li>
