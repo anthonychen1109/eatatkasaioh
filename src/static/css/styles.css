@@ -111,6 +111,10 @@ ul {
       .grid-item img {
         padding: 1px; } }
 
+.gal-modal img:hover {
+  cursor: pointer;
+  opacity: 0.7; }
+
 .modal-img {
   max-width: 600px; }
   @media only screen and (max-width: 800px) {
