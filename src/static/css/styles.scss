@@ -74,6 +74,28 @@ ul {
 // ################## NAVBAR #####################
 .navbar {
   height: 12vh;
+  .dropdown {
+    display: none;
+  }
+  @media only screen and (max-width: 800px) {
+    background-color: white;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    ul, a:not(:nth-child(3)) {
+      display: none;
+    }
+    .fa-bars {
+      color: black;
+    }
+    a.dropdown {
+      display: block;
+      padding-top: 10px;
+      position: relative;
+      right: 0;
+    }
+  }
   .top-nav {
     display: flex;
     justify-content: space-evenly;
@@ -162,11 +184,14 @@ ul {
 // ################## GALLERY #####################
 .gallery {
   padding-top: 80px;
+  padding-bottom: 40px;
   h1 {
+    padding-bottom: 20px;
     text-align: center;
   }
   .gallery-buttons {
     display: flex;
+    padding: 20px 0;
     button {
       display: block;
       margin: 0 auto;

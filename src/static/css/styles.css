@@ -58,6 +58,24 @@ ul {
 
 .navbar {
   height: 12vh; }
+  .navbar .dropdown {
+    display: none; }
+  @media only screen and (max-width: 800px) {
+    .navbar {
+      background-color: white;
+      height: 80px;
+      position: fixed;
+      width: 100%;
+      z-index: 999; }
+      .navbar ul, .navbar a:not(:nth-child(3)) {
+        display: none; }
+      .navbar .fa-bars {
+        color: black; }
+      .navbar a.dropdown {
+        display: block;
+        padding-top: 10px;
+        position: relative;
+        right: 0; } }
   .navbar .top-nav {
     display: flex;
     justify-content: space-evenly; }
@@ -122,11 +140,14 @@ ul {
       max-width: 300px; } }
 
 .gallery {
-  padding-top: 80px; }
+  padding-top: 80px;
+  padding-bottom: 40px; }
   .gallery h1 {
+    padding-bottom: 20px;
     text-align: center; }
   .gallery .gallery-buttons {
-    display: flex; }
+    display: flex;
+    padding: 20px 0; }
     .gallery .gallery-buttons button {
       display: block;
       margin: 0 auto; }
