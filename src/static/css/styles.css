@@ -13,6 +13,8 @@ ul {
   margin: 5%;
   opacity: 0;
   z-index: 99999; }
+  .toTop:hover {
+    cursor: pointer; }
 
 .carousel-item {
   height: 70vh; }
