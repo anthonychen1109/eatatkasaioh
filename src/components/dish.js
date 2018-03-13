@@ -31,7 +31,15 @@ const imagelist = [
   images.dish24,
   images.dish25,
   images.dish26,
-  images.dish27
+  images.dish27,
+  images.dish28,
+  images.dish29,
+  images.dish30,
+  images.dish31,
+  images.dish32,
+  images.dish33,
+  images.dish34,
+  images.dish35
 ]
 
   const Dish = () => {

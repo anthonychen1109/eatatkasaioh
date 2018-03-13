@@ -27,6 +27,14 @@ const images = {
   dish25: require('../static/images/dish/40.jpg'),
   dish26: require('../static/images/dish/42.jpg'),
   dish27: require('../static/images/dish/43.jpg'),
+  dish28: require('../static/images/dish/44.jpg'),
+  dish29: require('../static/images/dish/45.jpg'),
+  dish30: require('../static/images/dish/46.jpg'),
+  dish31: require('../static/images/dish/47.jpg'),
+  dish32: require('../static/images/dish/48.jpg'),
+  dish33: require('../static/images/dish/49.jpg'),
+  dish34: require('../static/images/dish/50.jpg'),
+  dish35: require('../static/images/dish/51.jpg'),
 
 // Store1
   green1: require('../static/images/green/1.jpg'),
